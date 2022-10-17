@@ -2,13 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main- ssign a random number to the variable
+*main- Assign a random number to the variable
 *Return: 0
 */
 int main(void)
 
-{ int n;
-int x;
+{ 	int n;
+	int x;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	x = n % 10;
