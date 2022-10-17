@@ -1,21 +1,11 @@
-#include <stdio.h>                                                                                                                                              
-
-/**                                                                                                                                                             
- *
- *  * main - print a line of code using puts                                                                                                                       
- *
- *   *                                                                                                                                                              
- *
- *    * Return: 0                                                                                                                                                    
- *
- *     */                                                                                                                                                             
-
-int main(void)                                                                                                                                                  
-
-{                                                                                                                                                               
-
-	        printf("\"Programming is like building a multilingual puzzle");                                                                                           
-
-		        return (0);                                                                                                                                             
-
+#include <stdio.h>
+/*
+* main - print a line
+* Return: 0
+*
+*/
+int main(void)
+{
+	printf("with proper grammar, but the outcome is a piece of art,");
+	return (0);
 }
