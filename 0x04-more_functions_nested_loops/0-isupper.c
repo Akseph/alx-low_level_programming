@@ -6,7 +6,7 @@
 
 /**
 * main - check the code.
-* Return: Always 0.
+* Return:1 if the chracter is uppercase 0, if otherwise
 */
 int main(void)
 {	char c;
