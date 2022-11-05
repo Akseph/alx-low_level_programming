@@ -1,48 +1,48 @@
 #include "main.h"
+
 /**
-* print_times_table - Print the `n` times table, starting with 0.
-* Description: If `n` is greater than 15 or less than 0, print nothing.
-* @n: int type number
-*/
+ * print_times_table - prints the n times table, starting with 0.
+ * @n: number of the times table
+**/
+
 void print_times_table(int n)
 {
-	int row = 0, col, val;
+	int i, j, k, l;
 
-	if (n > 15 || n < 0)
-	return;
-	while (row <= n)
+	if (n <= 15 && n >= 0)
 	{
-		for (col = 0; col <= n; col++)
+		for (i = 0; i <= n; i++)
 		{
-			val = row * col;
-			if (val > 99)
-			{
-				_putchar(val / 100 + '0');
-				_putchar(val / 10 % 10 + '0');
-				_putchar(val % 10 + '0');
-			}
-			else if (val > 9)
-			{
-				_putchar(' ');
-				_putchar(val / 10 + '0');
-				_putchar(val % 10 + '0');
-			}
-			else if (col != 0)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(val + '0');
-			}
-			else
-				_putchar(val + '0');
-			if (col != n)
+			_putchar('0');
+
+			for (j = 1; j <= n; j++)
 			{
 				_putchar(',');
 				_putchar(' ');
-			}
-		}
-		_putchar('\n');
-		row++;
-	}
 
+				k = i * j;
+
+				if (k <= 9)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else if (k <= 99 && k >= 10)
+				{
+					_putchar(' ');
+					_putchar((k / 10) + '0');
+				}
+				else
+				{
+					l = k / 10;
+					_putchar((l / 10) + '0');
+					_putchar((l % 10) + '0');
+				}
+
+				_putchar((k % 10) + '0');
+			}
+
+			_putchar('\n');
+		}
+	}
 }
